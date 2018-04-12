@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>City Night Layout - free website template</title>
+<title>NASA - LAB</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="{{ url_for('static', filename='css/city_night.css') }}" rel="stylesheet" type="text/css" />
@@ -16,7 +16,7 @@
     
         <div id="templatemo_menu">
      	<ul>
-			<li><a href="index.html"  class="current">Home</a></li>
+			<li><a href="{{ url_for('index') }}"  class="current">Home</a></li>
 			<li><a href="subpage.html">Services</a></li>
             <li><a href="subpage.html">Solutions</a></li>
             <li><a href="subpage.html">Partners</a></li>  
@@ -154,8 +154,8 @@
     <!-- End of content -->
     
     	<div id="templatemo_footer">
-        	<a href="#">Home</a> | <a href="#">Services</a> | <a href="#">Solutions</a> | <a href="#">Partners</a> | <a href="#">News</a> | <a href="#">Contact Us</a><br />
-        	Copyright © 2048 <a href="#"><strong>Your Company Name</strong></a>
+        	<a href="{{ url_for('index') }}">Home</a> | <a href="#">Services</a> | <a href="#">Solutions</a> | <a href="#">Partners</a> | <a href="#">News</a> | <a href="#">Contact Us</a><br />
+        	Copyright © 2018 <a href="#"><strong>NASA-LAB</strong></a>
             <!-- Credit: www.templatemo.com -->	
     	</div>
         
