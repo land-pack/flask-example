@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Airman Challenge - Air Force Missions Online Game</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover">
+
+	<link rel="manifest" href="{{ url_for('static', filename='meta/manifest.json') }}">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='meta/apple-touch-icon-180.png') }}">
+	<link rel="icon" sizes="128x128" href="{{ url_for('static', filename='meta/icon-128.png') }}">
+	<link rel="icon" sizes="192x192" href="{{ url_for('static', filename='meta/icon-192.png') }}">
+	<meta name="theme-color" content="#131720">
+
+	<meta name="twitter:title" content="AIRMAN CHALLENGE">
+	<meta name="twitter:site" content="https://www.airforce.com/airmanchallenge/">
+	<meta name="twitter:creator" content="@usairforce">
+	<meta name="twitter:description" content="See if you can complete the type of missions Airmen carry out everyday with this interactive game that puts you in the middle of action around the world.">
+	<meta name="twitter:image" content="https://www.airforce.com/airmanchallenge/assets/meta/airman-meta.png">
+
+	<meta name="twitter:card" content="player">
+	<meta name="twitter:player" content="https://94ff2dc4f98be2d82338-f80c7541a8d9753e5b2962258e823d5b.ssl.cf1.rackcdn.com/airmanchallenge/assets/meta/player.html">
+    <meta name="twitter:player:width" content="640">
+    <meta name="twitter:player:height" content="360">
+    <meta name="twitter:player:stream" content="https://94ff2dc4f98be2d82338-f80c7541a8d9753e5b2962258e823d5b.ssl.cf1.rackcdn.com/airmanchallenge/assets/meta/airmanchallenge-trailer.mp4">
+    <meta name="twitter:player:stream:content_type" content="video/mp4">
+
+	<meta property="og:title" content="AIRMAN CHALLENGE">
+	<meta property="og:site_name" content="AIRMAN CHALLENGE">
+	<meta property="og:url" content="https://www.airforce.com/airmanchallenge/">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="See if you can complete the type of missions Airmen carry out everyday with this interactive game that puts you in the middle of action around the world.">
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image" content="https://www.airforce.com/airmanchallenge/assets/meta/airman-meta.png">
+	<meta property="fb:app_id" content="1540630069584173">
+
+	<meta property="description" content="See if you can complete the type of missions Airmen carry out everyday with this interactive game that puts you in the middle of action around the world.">
+	<meta itemprop="image" content="https://www.airforce.com/airmanchallenge/assets/meta/airman-meta.png">
+
+
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{ url_for('static', filename='js/airman.js') }}" type="javascript">
+
+	<!--[if lte IE 10]>
+	<script type="text/javascript">
+		window.location = './fallback.html';
+	</script>
+	<![endif]-->
+
+	<script>
+		(function() {
+			window._CACHE_ = '1511387689185';
+			window._CONFIG_ = { E: 'prod', U: 'https://www.airforce.com/airmanchallenge/', S: 'https://api.airmanchallenge.com/share', G: 'GTM-WZTDNJ', D: 'data/data.json', A: 'https://api.airmanchallenge.com/api/', F: '1540630069584173', B: {"apiKey":"AIzaSyBqCIUn5dQv1-sa8sr2Hk5WIaOB0aFdhKk","authDomain":"airman-challenge.firebaseapp.com","databaseURL":"https://airman-challenge.firebaseio.com"} };
+			var p = 'airman';
+			try {eval('let i = []; i.map(() => {}); let fn = function(x = 1) { }');} catch(e) {window.IS_ES5 = true; p = 'es5-'+p;}
+			var s = document.createElement('script');
+			s.src = '{{ url_for("static", filename="js/airman.js")}}';
+			s.async = false;
+			document.head.appendChild(s);
+		})();
+	</script>
+</head>
+<body>
+</body>
+</html>
+
